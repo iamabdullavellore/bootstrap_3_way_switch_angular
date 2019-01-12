@@ -1,0 +1,28 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+  	<link rel="stylesheet" type="text/css" href="css/switch.css">
+	<link rel="stylesheet" type="text/css" href="css/myswitch.css">
+	<title>bootstrap_3_way_switch_angular</title>
+</head>
+	<body>
+		<form ng-app="App" ng-controller="Ctrl" novalidate>
+			<div class="toggle_radio">
+			    <input type="radio" class="toggle_option True" id="true" name="toggle_option" ng-model="switch" value="1">
+			    <input type="radio" class="toggle_option False" id="false" name="toggle_option" ng-model="switch" value="2">
+			    <input type="radio" checked class="toggle_option NA" id="na" name="toggle_option" ng-model="switch" value="3">
+			    <label for="true"><p style="color:  black;margin-bottom: -;margin-bottom: 0px;">True</p></label>
+			    <label for="false"><p style="color:  black;margin-bottom: -;margin-bottom: 0px;">False</p></label>
+			    <label for="na"><p style="color:  black;margin-bottom: -;margin-bottom: 0px;">N/A</p></label>
+			    <div class="toggle_option_slider" id="toggle_option_slider">
+			    </div>
+			</div>
+			{{switch}}
+		</form>
+	</body>
+	<script src="js/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular/controller.js?version=1.5"></script>
+</html>
